@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2023-08-27T00:09:10.042112+00:00",
+  "timestamp": "2023-08-29T00:08:43.147957+00:00",
   "repo": "decentralized-identity/bbs-signature",
   "labels": [
     {
@@ -2981,7 +2981,7 @@
       "id": "I_kwDOF8lax85FQeMK",
       "title": "Security Review of Differences",
       "url": "https://github.com/decentralized-identity/bbs-signature/issues/79",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "brentzundel",
       "authorAssociation": "MEMBER",
       "assignees": [],
@@ -2990,8 +2990,8 @@
       ],
       "body": "The work on the specification is progressing well, but there seem to be a number of changes being considered that will cause this specification to deviate from the published and peer-reviewed academic papers.\r\n\r\nWhile there may be more, I am concerned in particular about:\r\n#19 \r\n#37\r\n#70 \r\n#78\r\n\r\nIf these changes, or any others, are made which result in a deviation from the security proofs of the source material, then new security proofs need to be written before this spec is submitted as a draft to IETF.",
       "createdAt": "2022-03-07T21:30:34Z",
-      "updatedAt": "2023-07-17T18:30:41Z",
-      "closedAt": null,
+      "updatedAt": "2023-08-28T18:31:33Z",
+      "closedAt": "2023-08-28T18:31:32Z",
       "comments": [
         {
           "author": "tplooker",
@@ -3076,6 +3076,13 @@
           "body": "Discussed on the WG call on the 17th of July. Will review and discuss closing this next week.",
           "createdAt": "2023-07-17T18:30:41Z",
           "updatedAt": "2023-07-17T18:30:41Z"
+        },
+        {
+          "author": "BasileiosKal",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "Discussed on the WG call on the 28th of Aug. Draft using latest academic work. Closing.",
+          "createdAt": "2023-08-28T18:31:32Z",
+          "updatedAt": "2023-08-28T18:31:32Z"
         }
       ]
     },
@@ -33499,13 +33506,13 @@
       "labels": [],
       "body": "Divide [ProofGen](https://identity.foundation/bbs-signature/draft-irtf-cfrg-bbs-signatures.html#name-proof-generation-proofgen) and [ProofVerify](https://identity.foundation/bbs-signature/draft-irtf-cfrg-bbs-signatures.html#name-proof-verification-proofver) to the `Initialization`, `Challenge Calculation` and `Finalization` phases. \r\n\r\nThis is done by introducing 3 operations; `ProofInit`, `ProofFinalize` and  `ProofVerifyInit`, that handle the computations that were previously part of ProofGen and ProofVerify.\r\n\r\nThis is to allow for extensions of BBS, like predicate proofs, combining 2 BBS proofs, combining BBS proofs with other Pedersen-style commitments and much more, without requiring them to re-define the entire operations from scratch.\r\n\r\n---\r\n\r\n**Advantages**: Not a breaking change.\r\n**Disadvantages**:  More operations/ larger document.",
       "createdAt": "2023-08-09T13:25:41Z",
-      "updatedAt": "2023-08-25T23:00:56Z",
+      "updatedAt": "2023-08-28T17:55:59Z",
       "baseRepository": "decentralized-identity/bbs-signature",
       "baseRefName": "main",
       "baseRefOid": "1e5bbc7890d42696a40f298e1241fe698fe146a0",
       "headRepository": "decentralized-identity/bbs-signature",
       "headRefName": "vasilis/proof-gen-procedure",
-      "headRefOid": "3c108467feb58327358cb33350412554c92dace3",
+      "headRefOid": "4033f1b8f56db2c0576efb798f2e3d79e0c6ed28",
       "closedAt": null,
       "mergedAt": null,
       "mergedBy": null,
@@ -33652,6 +33659,46 @@
           "createdAt": "2023-08-25T23:00:55Z",
           "updatedAt": "2023-08-25T23:00:55Z",
           "comments": []
+        },
+        {
+          "id": "PRR_kwDOF8lax85fS2mT",
+          "commit": {
+            "abbreviatedOid": "3c10846"
+          },
+          "author": "BasileiosKal",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-08-28T17:55:44Z",
+          "updatedAt": "2023-08-28T17:55:44Z",
+          "comments": [
+            {
+              "originalPosition": 297,
+              "body": "Not sure. I like the list of \"Points\" starting with a capital letter TBH. Not feeling strongly about it!",
+              "createdAt": "2023-08-28T17:55:44Z",
+              "updatedAt": "2023-08-28T17:55:44Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOF8lax85fS2ry",
+          "commit": {
+            "abbreviatedOid": "3c10846"
+          },
+          "author": "BasileiosKal",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-08-28T17:55:59Z",
+          "updatedAt": "2023-08-28T17:55:59Z",
+          "comments": [
+            {
+              "originalPosition": 315,
+              "body": "Done. Thanks!",
+              "createdAt": "2023-08-28T17:55:59Z",
+              "updatedAt": "2023-08-28T17:55:59Z"
+            }
+          ]
         }
       ]
     },
