@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2023-08-29T00:08:43.147957+00:00",
+  "timestamp": "2023-09-03T00:09:03.323409+00:00",
   "repo": "decentralized-identity/bbs-signature",
   "labels": [
     {
@@ -6678,6 +6678,22 @@
       "body": "It's an RFC now: https://datatracker.ietf.org/doc/rfc9380/",
       "createdAt": "2023-08-21T16:56:57Z",
       "updatedAt": "2023-08-21T16:56:57Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 284,
+      "id": "I_kwDOF8lax85v0sTh",
+      "title": "BBS with fewer or no pairings",
+      "url": "https://github.com/decentralized-identity/bbs-signature/issues/284",
+      "state": "OPEN",
+      "author": "BasileiosKal",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "As discussed on our WG call, here's a first draft on BBS Signatures with less or no pairing operations:\r\n\r\nhttps://basileioskal.github.io/pairing-free-bbs/draft-vasilis-pairing-free-bbs.html\r\n\r\nYou can find the repo [here](https://github.com/BasileiosKal/pairing-free-bbs). Note that after review, if consensus is achieved, the intention is for the document to become part of this repository.\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+      "createdAt": "2023-08-31T18:36:21Z",
+      "updatedAt": "2023-08-31T18:36:21Z",
       "closedAt": null,
       "comments": []
     }
