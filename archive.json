@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2023-09-03T00:09:03.323409+00:00",
+  "timestamp": "2023-09-05T00:08:23.023856+00:00",
   "repo": "decentralized-identity/bbs-signature",
   "labels": [
     {
@@ -33522,13 +33522,13 @@
       "labels": [],
       "body": "Divide [ProofGen](https://identity.foundation/bbs-signature/draft-irtf-cfrg-bbs-signatures.html#name-proof-generation-proofgen) and [ProofVerify](https://identity.foundation/bbs-signature/draft-irtf-cfrg-bbs-signatures.html#name-proof-verification-proofver) to the `Initialization`, `Challenge Calculation` and `Finalization` phases. \r\n\r\nThis is done by introducing 3 operations; `ProofInit`, `ProofFinalize` and  `ProofVerifyInit`, that handle the computations that were previously part of ProofGen and ProofVerify.\r\n\r\nThis is to allow for extensions of BBS, like predicate proofs, combining 2 BBS proofs, combining BBS proofs with other Pedersen-style commitments and much more, without requiring them to re-define the entire operations from scratch.\r\n\r\n---\r\n\r\n**Advantages**: Not a breaking change.\r\n**Disadvantages**:  More operations/ larger document.",
       "createdAt": "2023-08-09T13:25:41Z",
-      "updatedAt": "2023-08-28T17:55:59Z",
+      "updatedAt": "2023-09-04T09:45:26Z",
       "baseRepository": "decentralized-identity/bbs-signature",
       "baseRefName": "main",
       "baseRefOid": "1e5bbc7890d42696a40f298e1241fe698fe146a0",
       "headRepository": "decentralized-identity/bbs-signature",
       "headRefName": "vasilis/proof-gen-procedure",
-      "headRefOid": "4033f1b8f56db2c0576efb798f2e3d79e0c6ed28",
+      "headRefOid": "80fc33d75b02675a14b1def3ec43038a3c41ec98",
       "closedAt": null,
       "mergedAt": null,
       "mergedBy": null,
