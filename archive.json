@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2023-09-10T00:09:35.281715+00:00",
+  "timestamp": "2023-09-12T00:08:31.882510+00:00",
   "repo": "decentralized-identity/bbs-signature",
   "labels": [
     {
@@ -33730,7 +33730,7 @@
       "labels": [],
       "body": "Closes #280\r\n\r\nAdds a commitment value to `Core` sign, to be used with Blind/Bound signatures.\r\n\r\nAlthough the `ciphersuite_id` changes this is not a breaking change. This PR defines an `api_id`, which has the same value with the old `ciphersuite_id` and is passed to the core operations, to be used for dsts, seeds etc..",
       "createdAt": "2023-08-21T16:20:30Z",
-      "updatedAt": "2023-09-09T10:01:37Z",
+      "updatedAt": "2023-09-11T18:49:09Z",
       "baseRepository": "decentralized-identity/bbs-signature",
       "baseRefName": "main",
       "baseRefOid": "1e5bbc7890d42696a40f298e1241fe698fe146a0",
@@ -33755,6 +33755,26 @@
           "createdAt": "2023-08-25T22:54:15Z",
           "updatedAt": "2023-08-25T22:54:15Z",
           "comments": []
+        },
+        {
+          "id": "PRR_kwDOF8lax85gmJ8_",
+          "commit": {
+            "abbreviatedOid": "81fe2ca"
+          },
+          "author": "andrewwhitehead",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-09-11T18:49:08Z",
+          "updatedAt": "2023-09-11T18:49:09Z",
+          "comments": [
+            {
+              "originalPosition": 821,
+              "body": "```suggestion\r\nFor every set of messages and every message msg',\r\n```",
+              "createdAt": "2023-09-11T18:49:09Z",
+              "updatedAt": "2023-09-11T18:49:09Z"
+            }
+          ]
         }
       ]
     }
