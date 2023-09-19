@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2023-09-17T00:09:31.007967+00:00",
+  "timestamp": "2023-09-19T00:08:41.199041+00:00",
   "repo": "decentralized-identity/bbs-signature",
   "labels": [
     {
@@ -33762,13 +33762,13 @@
       "labels": [],
       "body": "Closes #280\r\n\r\nAdds a commitment value to `Core` sign, to be used with Blind/Bound signatures.\r\n\r\nAlthough the `ciphersuite_id` changes this is not a breaking change. This PR defines an `api_id`, which has the same value with the old `ciphersuite_id` and is passed to the core operations, to be used for dsts, seeds etc..",
       "createdAt": "2023-08-21T16:20:30Z",
-      "updatedAt": "2023-09-15T15:31:12Z",
+      "updatedAt": "2023-09-18T18:26:24Z",
       "baseRepository": "decentralized-identity/bbs-signature",
       "baseRefName": "main",
       "baseRefOid": "1e5bbc7890d42696a40f298e1241fe698fe146a0",
       "headRepository": "decentralized-identity/bbs-signature",
       "headRefName": "vasilis/api-core-separation",
-      "headRefOid": "f6166e3772cd9de26eb026895dabc593daeb000a",
+      "headRefOid": "3f0f8f529a3b1fa241d915fd564e8916a0dc90d8",
       "closedAt": null,
       "mergedAt": null,
       "mergedBy": null,
