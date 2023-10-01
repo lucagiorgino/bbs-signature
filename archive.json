@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2023-09-28T00:08:31.740988+00:00",
+  "timestamp": "2023-10-01T00:10:03.773513+00:00",
   "repo": "decentralized-identity/bbs-signature",
   "labels": [
     {
@@ -33791,13 +33791,13 @@
       "labels": [],
       "body": "Closes #280\r\n\r\nAdds a commitment value to `Core` sign, to be used with Blind/Bound signatures.\r\n\r\nAlthough the `ciphersuite_id` changes this is not a breaking change. This PR defines an `api_id`, which has the same value with the old `ciphersuite_id` and is passed to the core operations, to be used for dsts, seeds etc..",
       "createdAt": "2023-08-21T16:20:30Z",
-      "updatedAt": "2023-09-21T11:00:49Z",
+      "updatedAt": "2023-09-29T19:06:33Z",
       "baseRepository": "decentralized-identity/bbs-signature",
       "baseRefName": "main",
-      "baseRefOid": "1e5bbc7890d42696a40f298e1241fe698fe146a0",
+      "baseRefOid": "9b491a754cc6668234aed4d408b598cfa62eabcd",
       "headRepository": "decentralized-identity/bbs-signature",
       "headRefName": "vasilis/api-core-separation",
-      "headRefOid": "3f0f8f529a3b1fa241d915fd564e8916a0dc90d8",
+      "headRefOid": "c913ceeff92a13b2d2420bcfb73ea6e7110f1508",
       "closedAt": null,
       "mergedAt": null,
       "mergedBy": null,
@@ -33834,6 +33834,339 @@
               "body": "```suggestion\r\nFor every set of messages and every message msg',\r\n```",
               "createdAt": "2023-09-11T18:49:09Z",
               "updatedAt": "2023-09-11T18:49:09Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOF8lax85iTBYw",
+          "commit": {
+            "abbreviatedOid": "40271ff"
+          },
+          "author": "OR13",
+          "authorAssociation": "NONE",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-09-28T15:29:01Z",
+          "updatedAt": "2023-09-28T15:29:01Z",
+          "comments": [
+            {
+              "originalPosition": 24,
+              "body": "is there a better word here than inputted? are these messages named in the spec? can we include a ref here?",
+              "createdAt": "2023-09-28T15:29:01Z",
+              "updatedAt": "2023-09-28T15:29:01Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOF8lax85iTCqf",
+          "commit": {
+            "abbreviatedOid": "40271ff"
+          },
+          "author": "OR13",
+          "authorAssociation": "NONE",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-09-28T15:31:37Z",
+          "updatedAt": "2023-09-28T15:31:37Z",
+          "comments": [
+            {
+              "originalPosition": 37,
+              "body": "This seems like its encouraging other specs to do something different... especially with integers.\r\n\r\nIt would be better to provide guidance to the other spec... \r\n\r\nIf you need to map data types other than octet strings, it is recommended that you ....\r\n\r\n1. describe your mapping in a document.\r\n2. provide test vectors, and cover edge cases, such as max and min datatypes, etc...",
+              "createdAt": "2023-09-28T15:31:37Z",
+              "updatedAt": "2023-09-28T15:31:37Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOF8lax85iTD8T",
+          "commit": {
+            "abbreviatedOid": "40271ff"
+          },
+          "author": "OR13",
+          "authorAssociation": "NONE",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-09-28T15:34:11Z",
+          "updatedAt": "2023-09-28T15:34:11Z",
+          "comments": [
+            {
+              "originalPosition": 258,
+              "body": "This sentence seems important, it would be nice to cover the normative bit first, and then leave the background details to another sentence.",
+              "createdAt": "2023-09-28T15:34:11Z",
+              "updatedAt": "2023-09-28T15:34:11Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOF8lax85iTFDr",
+          "commit": {
+            "abbreviatedOid": "40271ff"
+          },
+          "author": "OR13",
+          "authorAssociation": "NONE",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-09-28T15:36:34Z",
+          "updatedAt": "2023-09-28T15:36:34Z",
+          "comments": [
+            {
+              "originalPosition": 409,
+              "body": "Compare to CoreVerify..... `- generators (REQUIRED), vector of pseudo-random points in G1.`\r\n\r\nis this correct?",
+              "createdAt": "2023-09-28T15:36:34Z",
+              "updatedAt": "2023-09-28T15:36:34Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOF8lax85iTFb0",
+          "commit": {
+            "abbreviatedOid": "40271ff"
+          },
+          "author": "OR13",
+          "authorAssociation": "NONE",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-09-28T15:37:20Z",
+          "updatedAt": "2023-09-28T15:37:20Z",
+          "comments": [
+            {
+              "originalPosition": 631,
+              "body": "same comment about points.",
+              "createdAt": "2023-09-28T15:37:20Z",
+              "updatedAt": "2023-09-28T15:37:20Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOF8lax85iTF7w",
+          "commit": {
+            "abbreviatedOid": "40271ff"
+          },
+          "author": "OR13",
+          "authorAssociation": "NONE",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-09-28T15:38:23Z",
+          "updatedAt": "2023-09-28T15:38:23Z",
+          "comments": [
+            {
+              "originalPosition": 747,
+              "body": "```suggestion\r\nThe Interface operations MUST create the generators that are required by the core functions. To do so, they MUST use an operation that is conforming to the requirements listed in (#defining-new-generators). If a vector of messages is supplied (where each message can have different forms, for example octet strings, scalar values etc., depending on the application), the Interface operations MUST map the inputted messages to their scalar values, using an operation that is comforting to the requirements listed in (#define-a-new-map-to-scalar).\r\n```",
+              "createdAt": "2023-09-28T15:38:23Z",
+              "updatedAt": "2023-09-28T15:38:23Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOF8lax85iTGPX",
+          "commit": {
+            "abbreviatedOid": "40271ff"
+          },
+          "author": "OR13",
+          "authorAssociation": "NONE",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-09-28T15:39:03Z",
+          "updatedAt": "2023-09-28T15:39:03Z",
+          "comments": [
+            {
+              "originalPosition": 747,
+              "body": "Feels like this sentence could be improved further.",
+              "createdAt": "2023-09-28T15:39:03Z",
+              "updatedAt": "2023-09-28T15:39:03Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOF8lax85iTHsm",
+          "commit": {
+            "abbreviatedOid": "40271ff"
+          },
+          "author": "OR13",
+          "authorAssociation": "NONE",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-09-28T15:42:00Z",
+          "updatedAt": "2023-09-28T15:42:00Z",
+          "comments": [
+            {
+              "originalPosition": 782,
+              "body": "Feels like there should be more elaboration here, regarding safe extension.\r\n\r\nAlso not sure if there is a reference we can use to help send this signal home, perhaps ask the list for guidance on this.",
+              "createdAt": "2023-09-28T15:42:00Z",
+              "updatedAt": "2023-09-28T15:42:00Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOF8lax85iTITy",
+          "commit": {
+            "abbreviatedOid": "40271ff"
+          },
+          "author": "OR13",
+          "authorAssociation": "NONE",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-09-28T15:43:17Z",
+          "updatedAt": "2023-09-28T15:43:17Z",
+          "comments": [
+            {
+              "originalPosition": 903,
+              "body": "```suggestion\r\nEvery operation that is used to return generator points for use with the core BBS operations ((#core-operations)), MUST return points that conform to the aforementioned rules. Such operation must also follow the rules outlined bellow,\r\n```",
+              "createdAt": "2023-09-28T15:43:17Z",
+              "updatedAt": "2023-09-28T15:43:17Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOF8lax85iTI44",
+          "commit": {
+            "abbreviatedOid": "40271ff"
+          },
+          "author": "OR13",
+          "authorAssociation": "NONE",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-09-28T15:44:30Z",
+          "updatedAt": "2023-09-28T15:44:31Z",
+          "comments": [
+            {
+              "originalPosition": 993,
+              "body": "```suggestion\r\nAdditionally, the new operation MUST conform to the following requirements:\r\n```",
+              "createdAt": "2023-09-28T15:44:31Z",
+              "updatedAt": "2023-09-28T15:44:31Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOF8lax85iTJ4w",
+          "commit": {
+            "abbreviatedOid": "40271ff"
+          },
+          "author": "OR13",
+          "authorAssociation": "NONE",
+          "state": "APPROVED",
+          "body": "Lots of nits, nothing critical.",
+          "createdAt": "2023-09-28T15:46:36Z",
+          "updatedAt": "2023-09-28T15:46:36Z",
+          "comments": []
+        },
+        {
+          "id": "PRR_kwDOF8lax85ibWp4",
+          "commit": {
+            "abbreviatedOid": "40271ff"
+          },
+          "author": "BasileiosKal",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-09-29T19:00:49Z",
+          "updatedAt": "2023-09-29T19:00:50Z",
+          "comments": [
+            {
+              "originalPosition": 24,
+              "body": "Addressed. Thank you!",
+              "createdAt": "2023-09-29T19:00:49Z",
+              "updatedAt": "2023-09-29T19:00:50Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOF8lax85ibXGL",
+          "commit": {
+            "abbreviatedOid": "40271ff"
+          },
+          "author": "BasileiosKal",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-09-29T19:01:50Z",
+          "updatedAt": "2023-09-29T19:01:51Z",
+          "comments": [
+            {
+              "originalPosition": 37,
+              "body": "Updated (note also the addition of the `Mapping Messages to Scalars` security requirement). Thank you!",
+              "createdAt": "2023-09-29T19:01:51Z",
+              "updatedAt": "2023-09-29T19:01:51Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOF8lax85ibXXX",
+          "commit": {
+            "abbreviatedOid": "40271ff"
+          },
+          "author": "BasileiosKal",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-09-29T19:02:23Z",
+          "updatedAt": "2023-09-29T19:02:23Z",
+          "comments": [
+            {
+              "originalPosition": 409,
+              "body": "Nope. Fixed.",
+              "createdAt": "2023-09-29T19:02:23Z",
+              "updatedAt": "2023-09-29T19:02:24Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOF8lax85ibXZn",
+          "commit": {
+            "abbreviatedOid": "40271ff"
+          },
+          "author": "BasileiosKal",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-09-29T19:02:27Z",
+          "updatedAt": "2023-09-29T19:02:27Z",
+          "comments": [
+            {
+              "originalPosition": 631,
+              "body": "Fixed. Thanks!",
+              "createdAt": "2023-09-29T19:02:27Z",
+              "updatedAt": "2023-09-29T19:02:27Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOF8lax85ibXeA",
+          "commit": {
+            "abbreviatedOid": "40271ff"
+          },
+          "author": "BasileiosKal",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-09-29T19:02:36Z",
+          "updatedAt": "2023-09-29T19:02:37Z",
+          "comments": [
+            {
+              "originalPosition": 747,
+              "body": "Updated. Thank you!",
+              "createdAt": "2023-09-29T19:02:37Z",
+              "updatedAt": "2023-09-29T19:02:37Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOF8lax85ibXlU",
+          "commit": {
+            "abbreviatedOid": "40271ff"
+          },
+          "author": "BasileiosKal",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2023-09-29T19:02:58Z",
+          "updatedAt": "2023-09-29T19:02:58Z",
+          "comments": [
+            {
+              "originalPosition": 782,
+              "body": "Agreed. Made the sentence informational, expanded a bit and added some references. Will also ask the list for guidance.",
+              "createdAt": "2023-09-29T19:02:58Z",
+              "updatedAt": "2023-09-29T19:02:58Z"
             }
           ]
         }
