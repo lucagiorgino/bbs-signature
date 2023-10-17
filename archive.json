@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2023-10-15T00:09:38.603100+00:00",
+  "timestamp": "2023-10-17T00:09:04.419523+00:00",
   "repo": "decentralized-identity/bbs-signature",
   "labels": [
     {
@@ -34210,7 +34210,7 @@
       "labels": [],
       "body": "Based on the WG discussions, update the BBS Proof based on [CDL16].\r\n\r\n(Uses  #287)",
       "createdAt": "2023-10-14T19:38:32Z",
-      "updatedAt": "2023-10-14T19:38:32Z",
+      "updatedAt": "2023-10-15T17:42:22Z",
       "baseRepository": "decentralized-identity/bbs-signature",
       "baseRefName": "main",
       "baseRefOid": "9b491a754cc6668234aed4d408b598cfa62eabcd",
@@ -34221,7 +34221,15 @@
       "mergedAt": null,
       "mergedBy": null,
       "mergeCommit": null,
-      "comments": [],
+      "comments": [
+        {
+          "author": "BasileiosKal",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "@christianpaquin, @Wind4Greg ^these are breaking changes for the proof gen.\r\n\r\nHave included test vectors with additional traces to hopefully help with updating \ud83d\ude4f ",
+          "createdAt": "2023-10-15T17:42:22Z",
+          "updatedAt": "2023-10-15T17:42:22Z"
+        }
+      ],
       "reviews": []
     }
   ]
